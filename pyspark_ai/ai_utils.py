@@ -37,7 +37,7 @@ class AIMethodWrapper:
             The transformed DataFrame.
         """
         # return self.spark_ai.transform_df(self.df_instance, desc, cache)
-        x, y self.spark_ai.transform_df(self.df_instance, desc, cache)
+        x, y = self.spark_ai.transform_df(self.df_instance, desc, cache)
         return y
 
 
