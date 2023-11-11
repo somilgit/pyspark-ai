@@ -38,7 +38,7 @@ class AIMethodWrapper:
         """
         # return self.spark_ai.transform_df(self.df_instance, desc, cache)
         x, y = self.spark_ai.transform_df(self.df_instance, desc, cache)
-        return y
+        return x, y
 
 
     def explain(self, cache: bool = True) -> str:
