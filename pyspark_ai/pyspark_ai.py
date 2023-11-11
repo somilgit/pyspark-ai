@@ -537,7 +537,7 @@ class SparkAI:
         """
         sql_query = self._get_transform_sql_query(df, desc, cache)
         print("@@@@@@@{}@@@@@@@@".format(sql_query))
-        return self._spark.sql(sql_query)
+        return self._spark.sql(sql_query), sql_query
 
     def explain_df(self, df: DataFrame, cache: bool = True) -> str:
         """
